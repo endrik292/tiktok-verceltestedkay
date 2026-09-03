@@ -1,0 +1,5 @@
+/roblox1/.netlify/functions/* /.netlify/functions/:splat 200
+/roblox1/assets/* /assets/:splat 200
+/roblox1/local-tracking.js /local-tracking.js 200
+/roblox1 /index.html 200
+/roblox1/* /index.html 200

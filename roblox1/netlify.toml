@@ -1,0 +1,27 @@
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/roblox1/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/roblox1/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/roblox1/local-tracking.js"
+  to = "/local-tracking.js"
+  status = 200
+
+[[redirects]]
+  from = "/roblox1"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/roblox1/*"
+  to = "/index.html"
+  status = 200
