@@ -3,6 +3,12 @@
 <head><script>window.__tpl='4624c01e-bd3f-4b7b-b66a-809310bb2fab';</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090a10">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#090a10">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#090a10">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="color-scheme" content="dark">
 <base href="/roblox1/">
 <link href="assets/fonts/fonts.css" rel="stylesheet">
   <title>Roblox Sommer-Belohnungen</title>
@@ -19,6 +25,8 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: #090a10;
+    color-scheme: dark;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
@@ -202,6 +210,9 @@
   .rsl-search-screen,
   .rsl-reward-screen,
   .rsl-result-screen {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
     min-height: calc(100vh - 126px);
     padding: 48px 24px;
   }
@@ -214,6 +225,8 @@
 
   .rsl-hero {
     width: min(680px, 100%);
+    min-width: 0;
+    max-width: 100%;
     text-align: center;
     animation: rsl-fade-up 0.75s ease both;
   }
@@ -249,11 +262,13 @@
   .rsl-title {
     width: 100%;
     margin: 0 0 18px;
+    padding: 0 8px 4px;
+    overflow: visible;
     font-family: "Fredoka", sans-serif;
     font-size: clamp(38px, 6vw, 64px);
     font-weight: 700;
     line-height: 1.04;
-    letter-spacing: -0.035em;
+    letter-spacing: 0;
     text-align: center;
     color: #ffffff;
     text-shadow: 0 5px 34px rgba(0, 0, 0, 0.58);
@@ -275,6 +290,8 @@
 
   .rsl-gradient-text {
     display: inline-block;
+    padding: 0 0.1em 0.04em 0.02em;
+    margin-right: -0.06em;
     background: var(--rsl-gradient);
     -webkit-background-clip: text;
     background-clip: text;
@@ -292,6 +309,8 @@
 
   .rsl-form {
     width: min(520px, 100%);
+    min-width: 0;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -299,10 +318,15 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 12px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
     overflow: visible;
   }
 
   #rsl-username {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     min-width: 0;
     height: 60px;
@@ -312,8 +336,11 @@
     outline: 0;
     background: rgba(28, 28, 40, 0.9);
     color: var(--rsl-primary);
+    caret-color: #5f91ff;
     font-size: 16px;
     font-weight: 600;
+    line-height: normal;
+    background-clip: padding-box;
     box-shadow: 0 18px 52px rgba(0, 0, 0, 0.42);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -588,7 +615,7 @@
     font-size: clamp(34px, 6vw, 50px);
     font-weight: 700;
     line-height: 1;
-    letter-spacing: -0.035em;
+    letter-spacing: 0;
   }
 
   .rsl-reward-label {
@@ -921,6 +948,19 @@
     transform: scale(0.975);
   }
 
+  .rsl-continue.rsl-opening {
+    cursor: wait;
+    pointer-events: none;
+    background: #009960;
+  }
+
+  .rsl-continue.rsl-opening::before {
+    content: "";
+    border-color: rgba(255, 255, 255, 0.34);
+    border-top-color: #ffffff;
+    animation: rsl-spin 0.65s linear infinite;
+  }
+
   .rsl-back {
     margin: 22px auto 0;
     padding: 10px 18px;
@@ -986,7 +1026,7 @@
 
     .rsl-hero,
     .rsl-dashboard {
-      width: 100%;
+      width: min(100%, calc(100vw - 28px));
       max-width: none;
     }
 
@@ -1026,9 +1066,10 @@
     }
 
     .rsl-title {
-      font-size: clamp(31px, 10vw, 43px);
+      font-size: clamp(29px, 8.2vw, 37px);
       line-height: 1.02;
-      letter-spacing: -0.04em;
+      letter-spacing: 0;
+      padding-inline: 10px;
     }
 
     .rsl-title-summer {
@@ -1051,6 +1092,7 @@
       padding: 0 18px;
       border-radius: 14px;
       font-size: 16px;
+      line-height: normal;
     }
 
     .rsl-submit {
@@ -1621,6 +1663,19 @@
     transform: scale(0.975);
   }
 
+  #rbx-summer-lookup .rsl-result-screen .rsl-continue.rsl-opening {
+    cursor: wait;
+    pointer-events: none;
+    background: #009960;
+  }
+
+  #rbx-summer-lookup .rsl-result-screen .rsl-continue.rsl-opening::before {
+    content: "";
+    border-color: rgba(255, 255, 255, 0.34);
+    border-top-color: #ffffff;
+    animation: rsl-spin 0.65s linear infinite;
+  }
+
   #rbx-summer-lookup .rsl-result-screen .rsl-back {
     margin: 22px auto 0;
     padding: 10px 18px;
@@ -1986,8 +2041,8 @@
                   </svg>
                 </span>
                 <div class="rsl-step-content">
-                  <h4>App laden &amp; als 21+ anmelden</h4>
-                  <p>iOS &amp; Android · Dauert weniger als 60 Sekunden.</p>
+                  <h4>Lade die App herunter</h4>
+                  <p>Installiere Playful Rewards und erhalte 5€ sofort.</p>
                 </div>
                 <span class="rsl-step-number">1</span>
               </div>
@@ -2275,117 +2330,10 @@
 
 <script>
 (function() {
-  var offerMap = JSON.parse("{\"1\":{\"url\":\"https://www.stw4c9hx.com/33G977/21MMLCX/\",\"splits\":null}}");
-  var fallbackUrl = 'https://www.stw4c9hx.com/33G977/21MMLCX/';
-  var urlParams = JSON.parse("{\"sub1\":\"camp_1787268836613_204yakb\",\"sub2\":\"1875053834561601\",\"sub3\":\"go%2Bdo%2Bts_Ad%2Bname2026-08-27%2B02%253A57%253A04\",\"sub4\":\"4624c01e-bd3f-4b7b-b66a-809310bb2fab\",\"sub5\":\"E_C_P_CuAB9JFPGqtNOODD4edFMj1Vxt1VSW2NPSw-PbbnJQb1l5P7hdnAeqFI4dt5v-hmDeB1bj6CMTYsclpI1hlanwMfm2sAVpbJR0YuXFhODCMOOsqcbEOQI2w03CjwH2vmb6v_z13Cad8UA8QOfpUd6S1hNAQbwRdFJ7z0sp7pZfmhJgorKcfCcz2z3ZMpJVrGUeBIQeblWo4S-CTs_T9iLd8Q-cMJRVt3nhM_Z_Flr1jgSPq4rkDciKbwW4AAk3PGUJ2fTj0NGuA_sWPDLk5CUmfFK_Ozv4tRMeiaA5dg2gLbvB0SBHYyLjA\",\"cn\":\"Copy%2B1%2Bof%2BCopy%2B1%2Bof%2B204%2Bfix1%2B6\",\"agn\":\"Copy%2B15%2Bof%2BAd%2Bgroup%2B20260827025608\",\"av2\":\"1875053834573185\",\"s2\":\"camp_1787268836613_204yakb\",\"s3\":\"1875053834561601\",\"ttclid\":\"E_C_P_CuAB9JFPGqtNOODD4edFMj1Vxt1VSW2NPSw-PbbnJQb1l5P7hdnAeqFI4dt5v-hmDeB1bj6CMTYsclpI1hlanwMfm2sAVpbJR0YuXFhODCMOOsqcbEOQI2w03CjwH2vmb6v_z13Cad8UA8QOfpUd6S1hNAQbwRdFJ7z0sp7pZfmhJgorKcfCcz2z3ZMpJVrGUeBIQeblWo4S-CTs_T9iLd8Q-cMJRVt3nhM_Z_Flr1jgSPq4rkDciKbwW4AAk3PGUJ2fTj0NGuA_sWPDLk5CUmfFK_Ozv4tRMeiaA5dg2gLbvB0SBHYyLjA\",\"sub6\":\"1875055715429522\",\"sub7\":\"1875053834573185\",\"sub8\":\"Copy%2B15%2Bof%2BAd%2Bgroup%2B20260827025608\",\"sub9\":\"Copy%2B1%2Bof%2BCopy%2B1%2Bof%2B204%2Bfix1%2B6\",\"sub10\":\"Tiktok\",\"camp\":\"7w9ce1c2\"}");
-  var forceExternal = false;
-  // Server-resolve (New Link Test): the offer is not baked here. The CTA
-  // navigates back to this same domain with a _go marker and the worker 302s
-  // to the resolved offer, so the destination never sits in the page source.
-  var serverResolve = false;
-  var campaignCode = '';
-  // Secondary referrer ("domain 2") bounce — when set, the CTA navigates here
-  // instead of straight to the offer; domain 2 redirects on to the offer so it
-  // becomes the referrer.
-  var useSecReferrer = false;
-  var secReferrerHost = '';
-  var secReferrerCode = '';
-
-  var ua = navigator.userAgent || '';
-  // Detect any major in-app webview, not just TikTok. The toggle is named
-  // "Force external browser on CTA click" — should escape Discord, IG, FB,
-  // Snapchat, etc. as well.
-  // IMPORTANT: this script is emitted via a template literal, so '\/' is
-  // collapsed to '/' before the browser sees it — which would terminate the
-  // regex literal early. Keep ALL alternatives slash-free.
-  var isInAppBrowser = /BytedanceWebview|Bytedance|musical_ly|TikTok|ByteFullSdk|ByteLocale|Trill|aweme|Discord|Instagram|FBAN|FBAV|FB_IAB|FBIOS|Snapchat|Twitter|LinkedInApp|Pinterest/i.test(ua);
-  var isAndroid = /android/i.test(ua);
-  var isIOS = /iphone|ipad|ipod/i.test(ua);
-
-  function buildIntentUrl(finalUrl) {
-    try {
-      var u = new URL(finalUrl);
-      if (u.protocol !== 'https:' && u.protocol !== 'http:') return null;
-      var scheme = u.protocol.replace(':', '');
-      var rest = u.host + u.pathname + u.search + u.hash;
-      return 'intent://' + rest + '#Intent;scheme=' + scheme + ';end';
-    } catch (e) { return null; }
-  }
-
-  function showEscapeOverlay(finalUrl) {
-    if (document.getElementById('__ovl')) return;
-    var instruction = isIOS
-      ? 'Tippe oben rechts auf <strong>•••</strong> und dann auf <strong>"Im Browser öffnen"</strong>.'
-      : 'Tippe oben rechts auf <strong>•••</strong> und dann auf <strong>"Im Browser öffnen"</strong> oder <strong>"In Chrome öffnen"</strong>.';
-    var div = document.createElement('div');
-    div.id = '__ovl';
-    div.style.cssText = 'position:fixed;inset:0;z-index:2147483647;background:#000;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.5;';
-    div.innerHTML =
-      '<div style="max-width:420px">' +
-        '<div style="font-size:48px;margin-bottom:16px">🌐</div>' +
-        '<h2 style="margin:0 0 12px;font-size:22px">Im Browser öffnen</h2>' +
-        '<p style="margin:0 0 20px;opacity:.85">Für die beste Darstellung öffne diese Seite in Safari oder Chrome.</p>' +
-        '<p style="margin:0 0 24px">' + instruction + '</p>' +
-        '<button id="__ovl_b" style="background:#fff;color:#000;border:0;border-radius:999px;padding:12px 20px;font-size:16px;font-weight:600">Link kopieren</button>' +
-        '<div id="__ovl_m" style="margin-top:12px;opacity:.7;font-size:14px"></div>' +
-      '</div>';
-    document.body.appendChild(div);
-    document.getElementById('__ovl_b').addEventListener('click', function() {
-      var msg = document.getElementById('__ovl_m');
-      var done = function() { msg.textContent = 'Link kopiert. In Safari oder Chrome einfügen.'; };
-      var fail = function() { msg.textContent = finalUrl; };
-      try {
-        navigator.clipboard.writeText(finalUrl).then(done, function() {
-          var ta = document.createElement('textarea');
-          ta.value = finalUrl; document.body.appendChild(ta); ta.select();
-          try { document.execCommand('copy'); done(); } catch (_) { fail(); }
-          document.body.removeChild(ta);
-        });
-      } catch (e) { fail(); }
-    });
-  }
-
-  function navigateOrEscape(finalUrl) {
-    if (forceExternal && finalUrl) {
-      // Mobile: always try the OS-level escape regardless of detected
-      // webview, matching proven patterns (e.g. playfultwins.com). In-app
-      // webview UA detection is unreliable (Discord/IG don't always tag
-      // their WKWebView), so attempting unconditionally on mobile is the
-      // safer default. Real Safari/Chrome users still get the right URL.
-      if (isAndroid) {
-        var intent = buildIntentUrl(finalUrl);
-        if (intent) { window.location.href = intent; return; }
-      }
-      if (isIOS) {
-        try {
-          // NOTE: do NOT use a regex with '/' here — this string is emitted
-          // via template literal which collapses '\/' to '/' and terminates
-          // the regex early. Plain prefix-concat produces the same result
-          // for any http(s) URL (which all offer URLs are).
-          window.location.href = 'x-safari-' + finalUrl;
-        } catch (e) {}
-        setTimeout(function() {
-          if (document.hidden) return;
-          try { window.open(finalUrl, '_blank'); } catch (e) {}
-          showEscapeOverlay(finalUrl);
-        }, 300);
-        return;
-      }
-      // Desktop: keep the in-app gate so real desktop browsers (Chrome,
-      // Safari, Firefox) don't trigger popup blockers. Only Electron-based
-      // in-app webviews (Discord/Slack) get the window.open(_blank) escape.
-      if (isInAppBrowser) {
-        try {
-          var opened = window.open(finalUrl, '_blank', 'noopener');
-          if (opened) return;
-        } catch (e) {}
-      }
-    }
-    if (typeof window.trackOfferClick === 'function') {
-      window.trackOfferClick(finalUrl);
-    } else {
-      window.location.href = finalUrl;
-    }
+  var offerMap = JSON.parse("{\"1\":{\"url\":\"https://rdr.gtrx.org/aff_c?offer_id=4524&aff_id=17017\",\"splits\":null}}");
+  var fallbackUrl = 'https://rdr.gtrx.org/aff_c?offer_id=4524&aff_id=17017';
+  function navigateToOffer(finalUrl) {
+    if (finalUrl) window.location.href = finalUrl;
   }
 
   function pickWeightedUrl(splits) {
@@ -2406,63 +2354,12 @@
     if (!baseUrl) return null;
     try {
       var url = new URL(baseUrl);
-      Object.keys(urlParams).forEach(function(key) {
-        if (urlParams[key]) url.searchParams.set(key, urlParams[key]);
-      });
-      new URLSearchParams(window.location.search).forEach(function(value, key) {
-        if (value) url.searchParams.set(key, value);
-      });
-      // Scrub an unexpanded __CLICKID__ macro literal from ttclid/sub5 — TikTok
-      // leaves it literal on much Android in-app traffic, and this force-external
-      // CTA path reaches the offer without trackOfferClick's scrub. Mirror it.
-      var cleanTt = (urlParams.ttclid && !/^__.*__$/.test(urlParams.ttclid)) ? urlParams.ttclid : null;
-      var curTt = url.searchParams.get('ttclid');
-      if (curTt && /^__.*__$/.test(curTt)) { if (cleanTt) { url.searchParams.set('ttclid', cleanTt); } else { url.searchParams.delete('ttclid'); } }
-      var curS5 = url.searchParams.get('sub5');
-      if (curS5 && /^__.*__$/.test(curS5)) { if (cleanTt) { url.searchParams.set('sub5', cleanTt); } else { url.searchParams.delete('sub5'); } }
-      if (cleanTt && !url.searchParams.has('sub5')) { url.searchParams.set('sub5', cleanTt); }
+      var source = new URLSearchParams(window.location.search).get('source');
+      if (source) url.searchParams.set('source', source);
       return url.href;
     } catch (e) {
       return baseUrl;
     }
-  }
-
-  function buildBounceUrl(buttonNum) {
-    if (!secReferrerHost || !secReferrerCode) return null;
-    try {
-      var u = new URL('https://' + secReferrerHost + '/' + secReferrerCode);
-      u.searchParams.set('_rb', String(buttonNum));
-      // Stamp the click time so the bounce only fires for fresh clicks — a saved
-      // or shared bounce link revisited later carries a stale _rt and shows the
-      // decoy instead of the offer. Built at click time, not page-load time.
-      u.searchParams.set('_rt', String(Date.now()));
-      Object.keys(urlParams).forEach(function(key) {
-        if (urlParams[key]) u.searchParams.set(key, urlParams[key]);
-      });
-      new URLSearchParams(window.location.search).forEach(function(value, key) {
-        if (value) u.searchParams.set(key, value);
-      });
-      return u.href;
-    } catch (e) { return null; }
-  }
-
-  // Server-resolve nav target: same domain the visitor is already on, plus the
-  // _go marker (button) + _rt (click time) + tracking params. The worker
-  // resolves the offer for that button and 302s — the offer is never in the page.
-  function buildGoUrl(buttonNum) {
-    if (!campaignCode) return null;
-    try {
-      var u = new URL(window.location.origin + '/roblox1/' + campaignCode);
-      u.searchParams.set('_go', String(buttonNum));
-      u.searchParams.set('_rt', String(Date.now()));
-      Object.keys(urlParams).forEach(function(key) {
-        if (urlParams[key]) u.searchParams.set(key, urlParams[key]);
-      });
-      new URLSearchParams(window.location.search).forEach(function(value, key) {
-        if (value) u.searchParams.set(key, value);
-      });
-      return u.href;
-    } catch (e) { return null; }
   }
 
   function getButtonNumber(elementId) {
@@ -2488,21 +2385,16 @@
       } else {
         offerUrl = fallbackUrl;
       }
-      var finalUrl = buildFinalUrl(offerUrl);
-      // When secondary referrer is on, the CTA points at domain 2's bounce
-      // (which resolves the offer server-side), not the offer directly.
-      var bounceUrl = useSecReferrer ? buildBounceUrl(buttonNum) : null;
-      // Server-resolve mode points the CTA at the same-domain _go hop instead.
-      var navUrl = serverResolve ? buildGoUrl(buttonNum) : (bounceUrl || finalUrl);
+      var navUrl = buildFinalUrl(offerUrl);
 
       if (!navUrl) {
         console.warn('No offer URL for button', buttonNum);
         return;
       }
 
-      // If the CTA is an <a>, sync its href to the URL with sub params so
+      // If the CTA is an <a>, sync its href to the URL with source so
       // any path where JS doesn't intercept (early click, JS race, certain
-      // webviews) still navigates to a tracked URL — not the bare offer URL.
+      // webviews) still navigates to the intended affiliate URL.
       if (element.tagName === 'A') {
         element.setAttribute('href', navUrl);
       }
@@ -2512,25 +2404,23 @@
       element.parentNode.replaceChild(newElement, element);
       newElement.addEventListener('click', function(e) {
         e.preventDefault();
-        var clickNavUrl;
-        if (serverResolve) {
-          clickNavUrl = buildGoUrl(buttonNum);
-        } else if (useSecReferrer) {
-          clickNavUrl = buildBounceUrl(buttonNum);
+        var clickEntry = offerMap[buttonNum];
+        var clickUrl;
+        if (clickEntry && typeof clickEntry === 'object') {
+          clickUrl = (clickEntry.splits && clickEntry.splits.length > 0) ? pickWeightedUrl(clickEntry.splits) : clickEntry.url;
+        } else if (typeof clickEntry === 'string') {
+          clickUrl = clickEntry;
         } else {
-          var clickEntry = offerMap[buttonNum];
-          var clickUrl;
-          if (clickEntry && typeof clickEntry === 'object') {
-            clickUrl = (clickEntry.splits && clickEntry.splits.length > 0) ? pickWeightedUrl(clickEntry.splits) : clickEntry.url;
-          } else if (typeof clickEntry === 'string') {
-            clickUrl = clickEntry;
-          } else {
-            clickUrl = fallbackUrl;
-          }
-          clickNavUrl = buildFinalUrl(clickUrl);
+          clickUrl = fallbackUrl;
         }
+        var clickNavUrl = buildFinalUrl(clickUrl);
         if (!clickNavUrl) return;
-        navigateOrEscape(clickNavUrl);
+        newElement.classList.add('rsl-opening');
+        newElement.setAttribute('aria-busy', 'true');
+        newElement.textContent = 'Öffnet...';
+        requestAnimationFrame(function() {
+          navigateToOffer(clickNavUrl);
+        });
       });
     });
   }
