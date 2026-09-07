@@ -1,0 +1,5 @@
+/gravy /gravy/ 301
+/gravy/images/* /images/:splat 200
+/gravy/fonts/* /fonts/:splat 200
+/gravy/favicon.ico /favicon.ico 200
+/gravy/* /index.html 200
