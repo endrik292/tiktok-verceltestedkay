@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  (function(){
+    if(location.pathname === '/gravy-us'){
+      history.replaceState(null, '', '/gravy-us/' + location.search + location.hash);
+    }
+  })();
+</script>
+<link rel="dns-prefetch" href="https://go.appmethode.com">
+<link rel="preconnect" href="https://go.appmethode.com" crossorigin="">
+<title>Gravy Pass - Earn with your phone</title>
+<link rel="icon" href="favicon.ico">
+<meta name="description" content="Activate your Gravy Pass and unlock rewards.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gravy Pass">
+<meta property="og:description" content="Activate your Gravy Pass and unlock rewards.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gravy Pass">
+<meta name="twitter:description" content="Activate your Gravy Pass and unlock rewards.">
+<script>!function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");whop.setScope("biz_hAcPEVvW8oStv7");whop.track("page");</script>
+
+<style>
+  @font-face{font-family:"SF Pro";font-weight:400;src:url("fonts/sanfranciscodisplay-regular-webfont.woff") format("woff");font-display:swap}
+  @font-face{font-family:"SF Pro";font-weight:500;src:url("fonts/sanfranciscodisplay-medium-webfont.woff") format("woff");font-display:swap}
+  @font-face{font-family:"SF Pro";font-weight:600;src:url("fonts/sanfranciscodisplay-semibold-webfont.woff") format("woff");font-display:swap}
+  @font-face{font-family:"SF Pro";font-weight:700;src:url("fonts/sanfranciscodisplay-bold-webfont.woff") format("woff");font-display:swap}
+  html,body{margin:0;padding:0;background:#000;}
+  .cf-wrap,.cf-wrap *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro","Inter","Helvetica Neue",Arial,sans-serif;}
+  .cf-wrap{background:#000;color:#fff;padding:16px;max-width:480px;margin:0 auto;min-height:100vh;cursor:pointer;}
+  .cf-wrap .hero-image{width:100%;height:auto;display:block;border-radius:28px;}
+  .cf-wrap .rewards-card{background:#1c1c1c;border-radius:28px;padding:18px 22px;margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .cf-wrap .rewards-card>div{min-width:0;}
+  .cf-wrap .rewards-label{color:#8a8a8a;font-size:16px;font-weight:500;margin-bottom:2px;letter-spacing:-.2px;}
+  .cf-wrap .rewards-amount{font-size:30px;font-weight:800;letter-spacing:-1.2px;line-height:1.05;color:#fff;}
+  .cf-wrap .wallet-link{display:inline-block;line-height:0;text-decoration:none;transition:transform .15s ease;flex-shrink:0;}
+  .cf-wrap .wallet-link:hover,.cf-wrap .wallet-link:active{transform:scale(.96);}
+  .cf-wrap .wallet-badge{display:block;height:auto;border:none;outline:none;max-width:100%;}
+  .cf-wrap .wallet-badge.small{width:200px;}
+  .cf-wrap .wallet-badge.large{width:285px;}
+  .cf-wrap .wallet-link.center{display:block;text-align:center;}
+  .cf-wrap .wallet-link.center .wallet-badge{margin:0 auto;}
+  /* ===== Activation Required card (replicated from thecashdeals.com) ===== */
+  /* 2026-08-12: glow-ring treatment ported from mockup /gravy-act-9k4m (northpeak). */
+  /* 2026-08-13: card height trimmed (padding/gaps/line-height only) — copy unchanged. */
+  .cf-wrap .activation{background:linear-gradient(165deg,#242424 0%,#191919 60%,#171717 100%);border-radius:24px;padding:24px 22px 15px;margin-top:14px;position:relative;overflow:hidden;border:1px solid rgba(255,217,61,.22);box-shadow:0 0 0 1px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45),0 0 34px -14px rgba(255,180,60,.55);animation:cfActGlow 3.4s ease-in-out infinite;}
+  @keyframes cfActGlow{0%,100%{box-shadow:0 0 0 1px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45),0 0 30px -16px rgba(255,180,60,.45);border-color:rgba(255,217,61,.18);}50%{box-shadow:0 0 0 1px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.45),0 0 44px -10px rgba(255,180,60,.75);border-color:rgba(255,217,61,.34);}}
+  .cf-wrap .activation::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#ff8a1f 0%,#ffd93d 25%,#6ce673 50%,#4dd6c4 75%,#5aa9ff 100%);box-shadow:0 0 14px rgba(255,200,80,.6);}
+  .cf-wrap .activation::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ff8a1f 0%,#ffd93d 25%,#6ce673 50%,#4dd6c4 75%,#5aa9ff 100%);}
+  .cf-wrap .activation-head{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:11px;}
+  .cf-wrap .activation-head .lock{font-size:15px;line-height:1;flex-shrink:0;}
+  .cf-wrap .activation-head .atitle{font-size:18px;font-weight:800;letter-spacing:-.4px;color:#fff;line-height:1;}
+  .cf-wrap .activation-body{font-size:14.5px;line-height:1.6;color:#a6a6a6;font-weight:500;letter-spacing:-.1px;text-align:center;}
+  /* 2026-08-31: keeps "2x cash back" / "daily payouts" from splitting mid-phrase. */
+  .cf-wrap .activation-body b{color:#fff;font-weight:700;white-space:nowrap;}
+  .cf-wrap .steps{margin-top:32px;padding:0 6px;}
+  .cf-wrap .steps h2{font-size:34px;font-weight:800;letter-spacing:-1.4px;margin-bottom:22px;line-height:1.05;color:#fff;}
+  .cf-wrap .step{display:flex;align-items:center;gap:18px;margin-bottom:16px;}
+  .cf-wrap .step-num{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#000;flex-shrink:0;}
+  .cf-wrap .step-num.s1{background:#ff8a1f;}
+  .cf-wrap .step-num.s2{background:#4dd6c4;}
+  .cf-wrap .step-num.s3{background:#5aa9ff;}
+  .cf-wrap .step-text{font-size:20px;font-weight:700;letter-spacing:-.5px;color:#fff;}
+  .cf-wrap .payout{background:#1c1c1c;border-radius:28px;padding:22px;margin-top:24px;text-align:center;position:relative;}
+  .cf-wrap .payout-label{color:#8a8a8a;font-size:13px;font-weight:700;letter-spacing:1.8px;margin-bottom:8px;}
+  .cf-wrap .payout-amount{font-size:46px;font-weight:800;letter-spacing:-1.8px;background:linear-gradient(90deg,#ff8a1f 0%,#ffd93d 25%,#6ce673 50%,#4dd6c4 75%,#5aa9ff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:18px;line-height:1;display:inline-block;transform-origin:center center;will-change:transform;}
+  .cf-wrap .payout-divider{height:1px;background:#2a2a2a;margin:0 0 18px;}
+  @keyframes cfPopBounce{0%{transform:scale(1)}30%{transform:scale(1.09)}60%{transform:scale(.98)}100%{transform:scale(1)}}
+  .cf-wrap .payout-amount.cf-pop{animation:cfPopBounce .45s cubic-bezier(.34,1.56,.64,1);}
+  @keyframes cfFadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  .cf-wrap .hero-image,.cf-wrap .rewards-card,.cf-wrap .activation,.cf-wrap .steps,.cf-wrap .payout{animation:cfFadeUp .5s ease-out backwards;}
+  .cf-wrap .rewards-card{animation-delay:.08s;}
+  .cf-wrap .activation{animation-delay:.14s;}
+  .cf-wrap .steps{animation-delay:.20s;}
+  .cf-wrap .step-sub{margin:2px 0 0 56px;}
+  .cf-wrap .step-sub-l{font-size:12.5px;color:#8a8a8a;font-weight:600;margin-bottom:9px;letter-spacing:-.2px;}
+  .cf-wrap .chips{display:flex;gap:7px;flex-wrap:wrap;}
+  .cf-wrap .chip{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;
+    background:#1c1c1c;border:1px solid rgba(255,255,255,.12);font-size:12.5px;font-weight:700;color:#fff;}
+  .cf-wrap .chip.more{color:#8a8a8a;font-weight:600;}
+  .cf-wrap .cdot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+  .cf-wrap .cdot.ig{background:linear-gradient(45deg,#f9ce34,#ee2a7b 55%,#6228d7);}
+  .cf-wrap .cdot.tt{background:linear-gradient(45deg,#25f4ee,#fe2c55);}
+  .cf-wrap .payout{animation-delay:.28s;}
+  .cf-wrap .footer{margin-top:26px;text-align:center;}
+  .cf-wrap .footer a{color:#555;font-size:13px;font-weight:700;text-decoration:none;margin:0 8px;}
+  @media (max-width:430px){
+    .cf-wrap{padding:12px;}
+    .cf-wrap .rewards-card{padding:16px 18px;}
+    .cf-wrap .activation{padding:22px 18px 16px;}
+    .cf-wrap .activation-head .atitle{font-size:16px;}
+    /* 2026-08-12: body copy stays at the desktop 14.5px on phones so the paragraph flows like the
+       approved /gravy-act-9k4m mockup. Card padding + title size deliberately left at their mobile
+       values — changing those too restructured the stack. */
+    .cf-wrap .activation-body{font-size:13.5px;}
+    .cf-wrap .steps{padding:0 4px;}
+    .cf-wrap .steps h2{font-size:26px;letter-spacing:-1px;}
+    .cf-wrap .payout-amount{font-size:40px;letter-spacing:-1.4px;}
+    .cf-wrap .step-text{font-size:18px;}
+    .cf-wrap .rewards-amount{font-size:24px;letter-spacing:-1px;}
+    .cf-wrap .rewards-label{font-size:14px;}
+    .cf-wrap .wallet-badge.small{width:150px;}
+    .cf-wrap .wallet-badge.large{width:245px;}
+  }
+  /* ===== How it works link + Apple frosted sheet ===== */
+  .cf-wrap .howto-link{text-align:center;margin-top:13px;}
+  .cf-wrap .howto-link span{color:#7a7a7a;font-size:14px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border-bottom:1px solid #333;padding-bottom:1px;}
+  .cf-wrap .howto-link span:active{color:#aaa;}
+  .howto-modal{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);animation:cfFade .2s ease;}
+  .howto-modal[hidden]{display:none;}
+  @keyframes cfFade{from{opacity:0}to{opacity:1}}
+  @keyframes cfSheetUp{from{transform:translateY(40px);opacity:.4}to{transform:translateY(0);opacity:1}}
+  .howto-sheet{background:rgba(28,28,30,.82);backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);border:1px solid rgba(255,255,255,.1);border-radius:30px 30px 0 0;padding:28px 22px 32px;width:100%;max-width:480px;position:relative;animation:cfSheetUp .3s cubic-bezier(.2,.8,.2,1);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro",sans-serif;}
+  .howto-close{position:absolute;top:16px;right:18px;width:30px;height:30px;border-radius:50%;border:none;background:rgba(255,255,255,.12);cursor:pointer;font-size:0;padding:0;}
+  .howto-close::before,.howto-close::after{content:"";position:absolute;top:50%;left:50%;width:12px;height:1.6px;background:#fff;border-radius:2px;}
+  .howto-close::before{transform:translate(-50%,-50%) rotate(45deg);}
+  .howto-close::after{transform:translate(-50%,-50%) rotate(-45deg);}
+  .howto-title{font-size:22px;font-weight:800;letter-spacing:-.6px;color:#fff;margin-bottom:20px;text-align:center;}
+  .howto-step{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px;font-size:14.5px;line-height:1.5;color:#c2c2c5;font-weight:500;letter-spacing:-.1px;}
+  .howto-step b{color:#fff;font-weight:700;}
+  .howto-dot{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#000;}
+  .howto-dot.s1{background:#ff8a1f;}.howto-dot.s2{background:#4dd6c4;}.howto-dot.s3{background:#5aa9ff;}
+  .howto-cta{display:block;text-align:center;margin-top:22px;}
+  .howto-cta .wallet-badge{margin:0 auto;}
+  @media(max-width:430px){.howto-sheet{padding:24px 18px 28px;}.howto-title{font-size:20px;}.howto-step{font-size:13.5px;}}
+
+  /* v2026-09-01: Safari hand-off sheet. Built from .howto-sheet so it reads as part of the
+     product, not a system error dialog. Amber is the lander's existing "act now" accent
+     (.activation border/glow); reusing it means the sheet inherits learned meaning. */
+  .gv-coach{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;
+    justify-content:flex-end;background:rgba(0,0,0,.62);backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);animation:cfFade .22s ease;}
+  .gv-coach[hidden]{display:none;}
+  @keyframes cfFade{from{opacity:0}to{opacity:1}}
+
+  /* The aim marker. It sits where the ••• actually is, and the arrow travels toward it —
+     the animation IS the instruction, so the copy can stay short. */
+  .gv-aim{position:absolute;top:6px;right:17px;pointer-events:none;}
+  .gv-aim-arr{font-size:30px;line-height:1;color:#ffd93d;display:block;
+    filter:drop-shadow(0 2px 10px rgba(255,217,61,.45));animation:gvUp 1.5s ease-in-out infinite;}
+  @keyframes gvUp{0%,100%{transform:translateY(5px);opacity:.5}50%{transform:translateY(-3px);opacity:1}}
+
+  .gv-sheet{background:rgba(28,28,30,.86);backdrop-filter:blur(30px) saturate(180%);
+    -webkit-backdrop-filter:blur(30px) saturate(180%);border:1px solid rgba(255,255,255,.1);
+    border-bottom:0;border-radius:30px 30px 0 0;padding:12px 22px 30px;width:100%;
+    max-width:480px;margin:0 auto;animation:cfSheetUp .34s cubic-bezier(.2,.8,.2,1);}
+  .gv-grab{width:38px;height:5px;border-radius:99px;background:rgba(255,255,255,.22);margin:0 auto 18px;}
+  .gv-eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:#ffd93d;margin-bottom:7px;}
+  .gv-h{font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1.16;color:#fff;margin-bottom:7px;}
+  .gv-sub{font-size:14px;line-height:1.5;color:rgba(235,235,245,.6);margin-bottom:16px;}
+
+  /* Upsell card — same amber-glow treatment as .activation, so it reads as the same
+     "this is what you unlock" object the user already scrolled past. */
+  .gv-unlock{background:linear-gradient(165deg,#242424 0%,#191919 60%,#171717 100%);
+    border:1px solid rgba(255,217,61,.22);border-radius:20px;padding:15px 17px;margin-bottom:18px;
+    box-shadow:0 0 26px -14px rgba(255,180,60,.55);}
+  .gv-unlock-t{font-size:12px;font-weight:700;color:#ffd93d;letter-spacing:.04em;margin-bottom:10px;}
+  .gv-u{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;line-height:1.4;
+    color:rgba(235,235,245,.86);}
+  .gv-u+.gv-u{margin-top:8px;}
+  .gv-u i{flex:0 0 16px;height:16px;margin-top:1px;border-radius:50%;background:rgba(255,217,61,.16);
+    color:#ffd93d;font:800 10px/16px -apple-system,system-ui,sans-serif;text-align:center;font-style:normal;}
+
+  .gv-how{display:flex;gap:11px;align-items:center;}
+  .gv-how+.gv-how{margin-top:10px;}
+  .gv-how b{color:#fff;font-weight:700;}
+  .gv-how-t{font-size:14.5px;line-height:1.35;color:rgba(235,235,245,.82);}
+  .gv-dot{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;
+    justify-content:center;font-size:13px;font-weight:800;color:#000;}
+  .gv-dot.s1{background:#ff8a1f;}.gv-dot.s2{background:#4dd6c4;}
+  .gv-glyph{display:inline-flex;align-items:center;gap:3px;padding:6px 8px;border-radius:8px;
+    background:rgba(255,255,255,.16);vertical-align:middle;line-height:0;}
+  .gv-glyph i{width:3.5px;height:3.5px;border-radius:50%;background:#fff;display:block;}
+
+  .gv-copy{display:block;width:100%;margin-top:20px;padding:12px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.16);background:none;color:rgba(235,235,245,.62);
+    font:600 13.5px/1 -apple-system,system-ui,sans-serif;}
+  .gv-copy:active{background:rgba(255,255,255,.06);}
+  @media(max-width:430px){.gv-sheet{padding:12px 18px 26px;}.gv-h{font-size:23px;}}
+  @media(prefers-reduced-motion:reduce){
+    .gv-aim-arr,.gv-sheet,.gv-coach{animation:none;}}
+</style>
+</head>
+<body>
+<div class="cf-wrap">
+  <div style="display:flex;justify-content:center;padding:2px 0 16px">
+    <div style="display:inline-flex;align-items:center;gap:11px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)">
+      <span style="font-weight:800;letter-spacing:-.02em;font-size:17px;line-height:1;color:#fff">Gravy Pass</span>
+      <span style="font-size:13px;line-height:1;color:#8a8a8a;font-weight:300">×</span>
+      <span style="display:inline-flex;align-items:center;gap:5px"><svg viewBox="0 0 384 512" style="width:14px;height:17px;fill:#f4f4f5;display:block;position:relative;top:-1px" aria-label="Apple"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg></span>
+    </div>
+  </div>
+  <img class="hero-image" src="images/grvyy-hero.png" alt="Gravy Pass Cash $1000">
+  <div class="rewards-card">
+    <div>
+      <div class="rewards-label">Rewards</div>
+      <div class="rewards-amount" data-randomized="1">$60.54</div>
+    </div>
+    <a class="wallet-link" data-cta="" href="https://go.appmethode.com/cf/click"><img class="wallet-badge small" src="images/awbadge.png" alt="Add to Apple Wallet"></a>
+  </div>
+  <div class="activation">
+    <div class="activation-head"><span class="lock">🔒</span><span class="atitle">Activation Required</span></div>
+    <div class="activation-body"><b>New users:</b> Add the pass to Apple Wallet, then open 3 games to activate it. Your balance grows as you play — new levels and in-game buys pay into your Apple Pay, plus paid-to-scroll and the full lineup, including <b>Roblox, Subway Surfers,</b> and more.</div>
+  </div>
+  <div class="howto-link"><span data-howto="">How it works ›</span></div>
+  <div class="steps">
+    <h2>Complete the steps</h2>
+    <div class="step"><div class="step-num s1">1</div><div class="step-text">Click add to wallet</div></div>
+    <div class="step"><div class="step-num s2">2</div><div class="step-text">Complete 3 offers</div></div>
+    <div class="step"><div class="step-num s3">3</div><div class="step-text">Deposit to wallet</div></div>
+  </div>
+  <div class="payout">
+    <div class="payout-label">TOTAL AMOUNT PAID TODAY</div>
+    <div class="payout-amount" id="cf-payoutAmount" data-ticking="1">$14.195</div>
+    <div class="payout-divider"></div>
+    <a class="wallet-link center" data-cta="" href="https://go.appmethode.com/cf/click"><img class="wallet-badge large" src="images/awbadge.png" alt="Add to Apple Wallet"></a>
+  </div>
+  <div class="footer">
+    <a class="legal" href="privacy.html">Privacy Policy</a>
+    <a class="legal" href="terms.html">Terms Of Service</a>
+  </div>
+
+  <div class="howto-modal" data-modal="" hidden="">
+    <div class="howto-sheet">
+      <button class="howto-close" data-close="" aria-label="Close">×</button>
+      <div class="howto-title">How Gravy Pass works</div>
+      <div class="howto-step"><span class="howto-dot s1">1</span><div><b>Add to Apple Wallet.</b> Two taps, no card needed. Your Gravy Pass sits right next to your cards.</div></div>
+      <div class="howto-step"><span class="howto-dot s2">2</span><div><b>Activate.</b> Complete 3 quick offers to release the full amount to your Apple Pay and unlock your Pass.</div></div>
+      <div class="howto-step"><span class="howto-dot s3">3</span><div><b>Play &amp; cash out.</b> Earn real cash with paid-to-scroll features. Unlocked after 3 offers.</div></div>
+      <a class="wallet-link center howto-cta" data-cta="" href="https://go.appmethode.com/cf/click"><img class="wallet-badge large" src="images/awbadge.png" alt="Add to Apple Wallet"></a>
+    </div>
+  </div>
+
+  <div class="gv-coach" data-coach="" hidden="">
+    <div class="gv-aim"><div class="gv-aim-arr">↑</div></div>
+    <div class="gv-sheet">
+      <div class="gv-grab"></div>
+      <div class="gv-eyebrow">Final step</div>
+      <div class="gv-h">Your <span data-coach-amt="">Pass</span> is waiting</div>
+      <div class="gv-sub">Apple only adds Wallet passes through your <b>browser</b>, not directly from Instagram. Two taps and it is yours.</div>
+      <div class="gv-unlock">
+        <div class="gv-unlock-t">What unlocks after your 3 offers</div>
+        <div class="gv-u"><i>✓</i><div><b>2× cashback</b> on eligible in-game buys</div></div>
+        <div class="gv-u"><i>✓</i><div><b>Paid-to-scroll features</b> with Instagram</div></div>
+        <div class="gv-u"><i>✓</i><div>Daily earnings and bonus rewards</div></div>
+        <div class="gv-u"><i>✓</i><div>Payouts straight to Apple Pay</div></div>
+      </div>
+      <div class="gv-how"><div class="gv-dot s1">1</div><div class="gv-how-t">Tap <span class="gv-glyph"><i></i><i></i><i></i></span> in the top corner</div></div>
+      <div class="gv-how"><div class="gv-dot s2">2</div><div class="gv-how-t">Choose <b>Open in external browser</b></div></div>
+      <button class="gv-copy" data-coach-copy="">Copy link instead</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var OFFER = 'https://go.appmethode.com/cf/click';
+
+  function offerUrl(){
+    try{
+      var url = new URL(OFFER);
+      new URLSearchParams(window.location.search).forEach(function(value, key){
+        url.searchParams.set(key, value);
+      });
+      return url.toString();
+    }catch(e){
+      return OFFER;
+    }
+  }
+
+  function setCtaHrefs(){
+    var href = offerUrl();
+    var links = document.querySelectorAll('[data-cta]');
+    for(var i=0;i<links.length;i++){
+      if(links[i].tagName === 'A') links[i].href = href;
+    }
+  }
+  setCtaHrefs();
+})();
+</script>
+<script>!function(){"use strict";var t="lp_ref",n="cpid",e="lpurl",c="https://go.appmethode.com",r="(?<domain>http(?:s?)://[^/]*)".concat("/cf/click"),a="(?:(?:/(?<cta>[1-9][0-9]*)/?)|(?:/))?",i="^".concat(r).concat(a).concat("(?:$|(\\?.*))"),o='javascript:window.clickflare.l="(?<original_link>'.concat(r).concat(a,'("|(\\?[^"]*"))).*'),s=function(){return new RegExp(i,"")},u=function(){return new RegExp(o,"")};function l(t){var n=function(t){return t.replace(s(),(function(t){for(var n=[],e=1;e<arguments.length;e++)n[e-1]=arguments[e];var r=n[n.length-1].domain;return t.replace(r,c)}))}(t);return'javascript:window.clickflare.l="'.concat(n,'"; void 0;')}function d(t,n){if(n&&t&&n.apply(document,[t]),/loaded|interactive|complete/.test(document.readyState))for(var e=0,c=document.links.length;e<c;e++)if(s().test(document.links[e].href)){var r=document.links[e];window.clickflare.links_replaced.has(r)||(r.href=l(r.href),window.clickflare.links_replaced.add(r))}}var f,h,m,p;!function(r,a){var i=document.onreadystatechange;window.clickflare||(window.clickflare={listeners:{},customParams:{},links_replaced:new Set,addEventListener:function(t,n){var e=this.listeners[t]||[];e.includes(n)||e.push(n),this.listeners[t]=e},dispatchEvent:function(t,n){n&&(this.customParams[t]=n),(this.listeners[t]||[]).forEach((function(t){return t(n)}))},push:function(t,n){n&&(this.customParams[t]=n),(this.listeners[t]||[]).forEach((function(t){return t(n)}))}},document.onreadystatechange=function(t){return d(t,i)},d(null,i),setTimeout((function(){!function(r,a){var i,o=function(r,a){var i=new URL("".concat(c).concat(r));o=a,s="{",u=s+s,l="_",d=l+l,o.startsWith(u)||o.startsWith(d)||i.searchParams.set(n,a);var o,s,u,l,d;return i.searchParams.append(t,document.referrer),i.searchParams.append(e,location.href),i.searchParams.append("lpt",document.title),i.searchParams.append("t",(new Date).getTime().toString()),i.toString()}(r,a),s=document.createElement("script"),l=document.scripts[0];s.async=1,s.src=o,s.onerror=function(){!function(){for(var t=function(t,n){var e=document.links[t];u().test(decodeURI(e.href))&&setTimeout((function(){e&&e.setAttribute("href",function(t){var n=t.match(u());if(n){var e=(n.groups||{}).original_link;return e?e.slice(0,-1):t}return t}(decodeURI(e.href)))}))},n=0,e=document.links.length;n<e;n++)t(n)}()},null===(i=l.parentNode)||void 0===i||i.insertBefore(s,l)}(r,a)})))}("".concat("/cf/tags","/").concat(new URL(window.location.href).searchParams.get("cftmid")||"__CONTAINER_ID__"),(m=new URL(window.location.href).searchParams.get(n),f=new RegExp("(^| )".concat("cf_cpid","=([^;]+)")),p=(h=document.cookie.match(f))&&h.pop()||null,m||p||"__CAMPAIGN_ID__"))}();</script>
+<script>
+(function(){
+  var OFFER = 'https://go.appmethode.com/cf/click';
+  var fired = false;
+  window.addEventListener('pageshow', function(){ fired = false; });
+
+
+  function offerUrl(){
+    try{
+      var url = new URL(OFFER);
+      new URLSearchParams(window.location.search).forEach(function(value, key){
+        url.searchParams.set(key, value);
+      });
+      return url.toString();
+    }catch(e){
+      return OFFER;
+    }
+  }
+
+  function trackLead(){
+    try{
+      if(window.whop && window.whop.track) window.whop.track("lead");
+    }catch(e){}
+  }
+
+  function go(){
+    if(fired) return;
+    fired = true;
+    trackLead();
+    window.location.href = offerUrl();
+    setTimeout(function(){ fired = false; }, 2500);
+  }
+
+  function openModal(){ var m=document.querySelector('[data-modal]'); if(m) m.removeAttribute('hidden'); }
+  function closeModal(){ var m=document.querySelector('[data-modal]'); if(m) m.setAttribute('hidden',''); }
+
+  function init(){
+    var href = offerUrl();
+    var ctas = document.querySelectorAll('[data-cta]');
+    for(var i=0;i<ctas.length;i++){
+      if(ctas[i].tagName === 'A' && !/^javascript:/i.test(ctas[i].getAttribute('href')||'')) ctas[i].href = href;
+    }
+
+    var r = document.querySelector('.cf-wrap .rewards-amount');
+    if(r && !r.dataset.randomized){
+      r.dataset.randomized='1';
+      var d=Math.floor(Math.random()*61)+54, c=Math.floor(Math.random()*100);
+      r.textContent='$'+d+'.'+(c<10?'0'+c:c);
+    }
+    var el=document.getElementById('cf-payoutAmount');
+    if(el && !el.dataset.ticking){
+      el.dataset.ticking='1';
+      var v=14195;
+      setInterval(function(){
+        v+=Math.floor(Math.random()*31)+20;
+        el.textContent='$'+v.toLocaleString('de-DE');
+        el.classList.remove('cf-pop'); void el.offsetWidth; el.classList.add('cf-pop');
+      },1000);
+    }
+    var wrap=document.querySelector('.cf-wrap');
+    if(wrap && !wrap.dataset.bound){
+      wrap.dataset.bound='1';
+      wrap.addEventListener('click', function(e){
+        if(e.target.closest && e.target.closest('a.legal')) return;
+        if(e.target.closest && e.target.closest('[data-howto]')){ openModal(); return; }
+        var modal = e.target.closest && e.target.closest('.howto-modal');
+        if(modal){
+          if(e.target.closest('[data-cta]')){ trackLead(); return; }
+          if(e.target.closest('[data-close]') || e.target === modal){ closeModal(); return; }
+          return;
+        }
+        if(e.target.closest && e.target.closest('[data-cta]')){ trackLead(); return; }
+        go();
+      });
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+</body></html>
