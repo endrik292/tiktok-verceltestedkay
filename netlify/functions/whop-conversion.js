@@ -1,10 +1,10 @@
 const WHOP_EVENTS_URL = "https://api.whop.com/api/v1/events";
 const WHOP_API_VERSION = "2026-09-02-2";
-const DEFAULT_ACCOUNT_ID = "biz_hAcPEVvW8oStv7";
-const DEFAULT_EVENT_NAME = "playfuldownload";
+const DEFAULT_ACCOUNT_ID = "biz_9ydWf3JyqZJayr";
+const DEFAULT_EVENT_NAME = "complete_registration";
 
 const ALLOWED_EVENTS = new Set([
-  "playfuldownload",
+  "complete_registration",
 ]);
 
 exports.handler = async function handler(event) {
