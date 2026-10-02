@@ -28,7 +28,7 @@ exports.handler = async function handler(event) {
     return json(500, { ok: false, error: "missing_whop_api_key" });
   }
 
-  const accountId = process.env.WHOP_ACCOUNT_ID || DEFAULT_ACCOUNT_ID;
+  const accountId = getParam(params, "account_id", "biz_id") || process.env.WHOP_ACCOUNT_ID || DEFAULT_ACCOUNT_ID;
   const eventName = normalizeEventName(getParam(params, "event_name", "event") || DEFAULT_EVENT_NAME);
 
   const conversionValue = parseNumber(
